@@ -19,7 +19,7 @@ ________________________________________________________________________________
 
 **Enterprise Data and AI Officer | Data Literacy Advocate | Educator in Professional Military Education**
 
-Welcome! I'm Jason A. Ballard, an experienced data and AI integration leader currently serving as the Enterprise Data and AI Officer for Army University. My work bridges data science, AI strategy, and higher education, focusing on transforming decision-making through data literacy and innovation.
+Welcome! I'm Jason A. Ballard, an experienced data and AI integration leader currently serving as a Data and AI Officer for the US Army Combined Arms Center at Fort Leavenworth Kansas. My work bridges data science, AI strategy, and higher education, focusing on transforming decision-making through data literacy and innovation.
 
 I invite you to explore my [GitHub repository](https://github.com/JBtallgrass), where I share insights, tools, and resources geared toward data literacy and advanced analytics in educational contexts. My projects emphasize practical solutions, open collaboration, and a commitment to enhancing data accessibility across teams.
 
@@ -32,7 +32,7 @@ Please don't hesitate to connect, collaborate, or contact me if our interests al
 
 ## Linkedin: [Jason A. Ballard](https://linkedin.com/in/ballardjasona/) 
 
-# Project Title: Module 4 Requests, JSON, and basic NLP with spaCy
+# Project Title: Module 6 
 
 [HTML File:]()
 
@@ -57,23 +57,8 @@ At the end of this module, students will be able to:
 
 
 ## Instructions
-a. Copy the base repository into your GitHub account by selecting the "Use this Template" button on GitHub and specifying yourself as the owner. The base repository is available at [https://github.com/wmnlp-materials/json-sentiment](https://github.com/wmnlp-materials/json-sentiment)
+a.
 
-b. Clone YOUR new repo down to your machine.
-
-c. On your machine, open the Jupyter Notebook to edit.
-
-d. Required: After your name in your Markdown introduction, add a viewable, clickable link to your GitHub repo. You can build your brand and make your Markdown introduction clear and professional.
-
-e. Required: Use Markdown headings (e.g., Question 1) to show your content clearly by each question number.
-
-f. Complete the first task.
-
-g. Execute the notebook. Commit and push to GitHub. Verify your notebook appears correctly.
-
-h. Complete the second task.
-
-i. Execute the notebook. Commit and push to GitHub. Verify your notebook appears correctly.
 
 ##### Work this way until all tasks have been completed. 
 
