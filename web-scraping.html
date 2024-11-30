@@ -7552,7 +7552,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Dependencies</span>
@@ -7577,7 +7577,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Notebook conversion</span>
@@ -7596,7 +7596,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Don't forget to load the en_core_web_sm</span>
@@ -7614,9 +7614,44 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Model loaded successfully!
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">OSError</span>                                   Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 2</span>
+<span class="ansi-green-fg">      1</span> <span style="color: rgb(95,135,135)"># Don't forget to load the en_core_web_sm</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> nlp <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">spacy</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">load</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">en_core_web_sm</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      3</span> <span style="color: rgb(95,135,135)"># nlp.add_pipe(spacytextblob)</span>
+<span class="ansi-green-fg">      4</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Model loaded successfully!</span><span style="color: rgb(175,0,0)">"</span>)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\balla\Documents\csis-dspython\web-scraping\.venv\Lib\site-packages\spacy\__init__.py:51</span>, in <span class="ansi-cyan-fg">load</span><span class="ansi-blue-intense-fg ansi-bold">(name, vocab, disable, enable, exclude, config)</span>
+<span class="ansi-green-fg">     27</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">load</span>(
+<span class="ansi-green-fg">     28</span>     name: Union[<span style="color: rgb(0,135,0)">str</span>, Path],
+<span class="ansi-green-fg">     29</span>     <span style="color: rgb(98,98,98)">*</span>,
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">     34</span>     config: Union[Dict[<span style="color: rgb(0,135,0)">str</span>, Any], Config] <span style="color: rgb(98,98,98)">=</span> util<span style="color: rgb(98,98,98)">.</span>SimpleFrozenDict(),
+<span class="ansi-green-fg">     35</span> ) <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">&gt;</span> Language:
+<span class="ansi-green-fg">     36</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">"""Load a spaCy model from an installed package or a local path.</span>
+<span class="ansi-green-fg">     37</span> 
+<span class="ansi-green-fg">     38</span> <span style="color: rgb(175,0,0)">    name (str): Package name or model path.</span>
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">     49</span> <span style="color: rgb(175,0,0)">    RETURNS (Language): The loaded nlp object.</span>
+<span class="ansi-green-fg">     50</span> <span style="color: rgb(175,0,0)">    """</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 51</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">util</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">load_model</span><span class="ansi-yellow-bg">(</span>
+<span class="ansi-green-fg">     52</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     53</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">vocab</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">vocab</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     54</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">disable</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">disable</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     55</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">enable</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">enable</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     56</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">exclude</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">exclude</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     57</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">     58</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\balla\Documents\csis-dspython\web-scraping\.venv\Lib\site-packages\spacy\util.py:472</span>, in <span class="ansi-cyan-fg">load_model</span><span class="ansi-blue-intense-fg ansi-bold">(name, vocab, disable, enable, exclude, config)</span>
+<span class="ansi-green-fg">    470</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> name <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> OLD_MODEL_SHORTCUTS:
+<span class="ansi-green-fg">    471</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">IOError</span>(Errors<span style="color: rgb(98,98,98)">.</span>E941<span style="color: rgb(98,98,98)">.</span>format(name<span style="color: rgb(98,98,98)">=</span>name, full<span style="color: rgb(98,98,98)">=</span>OLD_MODEL_SHORTCUTS[name]))  <span style="color: rgb(95,135,135)"># type: ignore[index]</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 472</span> <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">IOError</span>(Errors<span style="color: rgb(98,98,98)">.</span>E050<span style="color: rgb(98,98,98)">.</span>format(name<span style="color: rgb(98,98,98)">=</span>name))
+
+<span class="ansi-red-intense-fg ansi-bold">OSError</span>: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.</pre>
 </div>
 </div>
 </div>
@@ -7650,7 +7685,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Define the URL</span>
@@ -7720,7 +7755,7 @@ Article saved successfully to laser_headlights_article.pkl.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Load the article HTML from the .pkl file</span>
@@ -7837,7 +7872,7 @@ Posted in car hacks, Engineering, Featured, Laser Hacks, SliderTagged laser, las
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Load the article HTML from the .pkl file</span>
@@ -7909,7 +7944,7 @@ Token: 'led', Frequency: 10
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Load the article HTML from the .pkl file</span>
@@ -7990,7 +8025,7 @@ Lemma: 'led', Frequency: 10
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Define the scoring methods</span>
@@ -8121,7 +8156,7 @@ Score by Lemmas: 0.0909
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the article HTML from the .pkl file</span>
@@ -8199,7 +8234,7 @@ Score by Lemmas: 0.0909
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the article HTML from the .pkl file</span>
@@ -8294,7 +8329,7 @@ Score by Lemmas: 0.0909
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Extract nouns from the text</span>
@@ -8346,7 +8381,7 @@ Score by Lemmas: 0.0909
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8372,44 +8407,6 @@ Score by Lemmas: 0.0909
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">UnicodeDecodeError</span>                        Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[68], line 10</span>
-<span class="ansi-green-fg">      8</span> <span style="color: rgb(95,135,135)"># Read the notebook</span>
-<span class="ansi-green-fg">      9</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(notebook_filename) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> f:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 10</span>     nb <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">nbformat</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">f</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">as_version</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">4</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">     12</span> <span style="color: rgb(95,135,135)"># Convert to HTML</span>
-<span class="ansi-green-fg">     13</span> body, resources <span style="color: rgb(98,98,98)">=</span> html_exporter<span style="color: rgb(98,98,98)">.</span>from_notebook_node(nb)
-
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\balla\Documents\csis-dspython\web-scraping\.env\Lib\site-packages\nbformat\__init__.py:169</span>, in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-intense-fg ansi-bold">(fp, as_version, capture_validation_error, **kwargs)</span>
-<span class="ansi-green-fg">    141</span> <span style="color: rgb(175,0,0)">"""Read a notebook from a file as a NotebookNode of the given version.</span>
-<span class="ansi-green-fg">    142</span> 
-<span class="ansi-green-fg">    143</span> <span style="color: rgb(175,0,0)">The string can contain a notebook of any version.</span>
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">    165</span> <span style="color: rgb(175,0,0)">    The notebook that was read.</span>
-<span class="ansi-green-fg">    166</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-fg">    168</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 169</span>     buf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">fp</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    170</span> <span class="ansi-bold" style="color: rgb(0,135,0)">except</span> <span class="ansi-bold" style="color: rgb(215,95,95)">AttributeError</span>:
-<span class="ansi-green-fg">    171</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(fp, encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">utf8</span><span style="color: rgb(175,0,0)">"</span>) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> f:  <span style="color: rgb(95,135,135)"># noqa: PTH123</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py:23</span>, in <span class="ansi-cyan-fg">IncrementalDecoder.decode</span><span class="ansi-blue-intense-fg ansi-bold">(self, input, final)</span>
-<span class="ansi-green-fg">     22</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">decode</span>(<span style="color: rgb(0,135,0)">self</span>, <span style="color: rgb(0,135,0)">input</span>, final<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 23</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">codecs</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">charmap_decode</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">decoding_table</span><span class="ansi-yellow-bg">)</span>[<span style="color: rgb(98,98,98)">0</span>]
-
-<span class="ansi-red-intense-fg ansi-bold">UnicodeDecodeError</span>: 'charmap' codec can't decode byte 0x9d in position 6226: character maps to &lt;undefined&gt;</pre>
 </div>
 </div>
 </div>
